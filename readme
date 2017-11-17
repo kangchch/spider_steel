@@ -1,0 +1,3 @@
+分为两个抓取程序
+一、抓取公司url：通过分析网站拼接每一页的url（在程序里有注释详解，忘记了看一下），遍历公司的url，存到mongo，(steel_info/company_url),status:0 未抓取 1 已抓取
+二、抓取公司详情：从mongo里取status为0的url抓取详情，抓取成功则更新company_url表的status为1， 
